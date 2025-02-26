@@ -70,6 +70,7 @@ exports.signup = async(req, res) => {
         return res.status(500).send({ message: "Error signing up!", error });
     }
 };
+
 exports.getAllRegisterUsers = async(req, res) => {
     try {
         const users = await User.find(); // Retrieve all users from the database
